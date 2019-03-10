@@ -6,6 +6,9 @@ Some of the Basic to Advance Interview Coding Exercises solved using JavaScript.
 - There are two files in every topic's folder
 1. index.js
 2. test.js
+3. directions.html   (_Not present in every topic_)
+
+ _**directions.html** is present when there is large number of task to perform in the given exercise. Open the file in the browser for all  the task list._
 
 - **index.js** consist of the problem statement as well as the problem solution 
 - **test.js** consist of all the test cases for the given problem
