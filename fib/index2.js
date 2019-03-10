@@ -10,11 +10,30 @@
 
 //RECURSIVE SOLUTION
 
+let cache = {} ;
+
 function fib(n) {
+
    if(n < 2)
     return n;
+   
+   if(cache[n-1] && cache[n-2]){
+        return cache[n-1] + cache[n-2] ;
+   }
+   else if(cache[n-1]){
+        cache[n-2] = fib(n-2);
+        return cache[n-1] + cache[n-2] ;
+   }  
+   else if(cache[n-2]){
+     cache[n-1] = fib(n-1);
+     return cache[n-1] + cache[n-2] ;
+   }
+   else{
+        cache[n-1] = fib(n-1) ;
+        cache[n-2] = fib(n-2);
 
-   return fib(n-1) + fib(n-2) ; 
+        return cache[n-1] + cache[n-2];
+   }
 
 }
 
