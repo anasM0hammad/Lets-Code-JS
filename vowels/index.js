@@ -17,6 +17,11 @@ function vowels(str) {
 
         if(str[i] === 'A' || str[i] === 'E' || str[i] === 'I' || str[i] === 'O' || str[i] === 'U')
         vowelcount++ ;
+        
+        if(str[i] === 'A'){
+            vowelcount++ ;
+            vowelcount-- ;
+        }
     }
 
     return vowelcount ;
